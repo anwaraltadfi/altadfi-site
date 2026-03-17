@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تواصل معنا — التادفي</title>
+  <meta name="description" content="تواصل مع ALTADFI للاستيراد والتصدير والشحن واللوجستيات، مع تركيز على البضائع عالية القيمة." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="rtl">
+  <a class="skip" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index-ar.html" aria-label="الصفحة الرئيسية">
+        <img class="logo" src="assets/img/logos/altadfi-logo.png" alt="ALTADFI logo" />
+        <span class="brand-text">
+          <strong>ALTADFI</strong>
+          <small>حيث تكون الأعمال.</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="القائمة الرئيسية">
+        <a href="index-ar.html">الرئيسية</a>
+        <a href="services-ar.html">الخدمات</a>
+        <a href="about-ar.html">من نحن</a>
+        <a class="active btn btn-sm" href="contact-ar.html">تواصل</a>
+      </nav>
+
+      <div class="lang-switch" aria-label="تبديل اللغة">
+        <a class="lang" href="contact.html">EN</a>
+        <span class="lang-sep">/</span>
+        <a class="lang active" href="contact-ar.html">AR</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="card">
+          <p class="pill">تواصل</p>
+          <h1>طلب عرض سعر</h1>
+          <p class="lead">
+            أرسل تفاصيل الطلب وسنرد عليك بالخطوات المطلوبة (غالباً نفس اليوم).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid2">
+          <!-- LEFT: FORM -->
+          <div class="card-soft">
+            <h3 style="margin-top:0;">نموذج الطلب</h3>
+
+            <!-- ✅ Netlify Forms -->
+            <form class="form"
+                  name="altadfi-leads"
+                  method="POST"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  action="/thanks-ar.html">
+
+              <input type="hidden" name="form-name" value="altadfi-leads" />
+              <p style="display:none;">
+                <label>لا تملأ هذا الحقل: <input name="bot-field" /></label>
+              </p>
+
+              <div class="field">
+                <label for="name-ar">الاسم</label>
+                <input id="name-ar" name="name" type="text" placeholder="اسمك" required />
+              </div>
+
+              <div class="field">
+                <label for="email-ar">البريد الإلكتروني</label>
+                <input id="email-ar" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="field">
+                <label for="whatsapp-ar">واتساب (اختياري)</label>
+                <input id="whatsapp-ar" name="whatsapp" type="text" placeholder="+90 534 913 9549" />
+              </div>
+
+              <div class="field">
+                <label for="service-ar">الخدمة</label>
+                <select id="service-ar" name="service">
+                  <option value="استيراد">استيراد</option>
+                  <option value="تصدير">تصدير</option>
+                  <option value="شحن ولوجستيات">شحن ولوجستيات</option>
+                  <option value="آلات الذهب">آلات الذهب</option>
+                  <option value="مجوهرات/بضائع عالية القيمة">مجوهرات / بضائع عالية القيمة</option>
+                  <option value="أخرى">أخرى</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="pickup-ar">بلد/مدينة الاستلام (اختياري)</label>
+                <input id="pickup-ar" name="pickup_country_city" type="text" placeholder="مثال: تركيا — إسطنبول" />
+              </div>
+
+              <div class="field">
+                <label for="destination-ar">بلد/مدينة الوجهة</label>
+                <input id="destination-ar" name="destination_country_city" type="text" placeholder="مثال: السعودية — الرياض" required />
+              </div>
+
+              <div class="field">
+                <label for="shipping-ar">طريقة الشحن</label>
+                <select id="shipping-ar" name="shipping_method">
+                  <option value="جوي">جوي</option>
+                  <option value="بحري">بحري</option>
+                  <option value="سريع">سريع</option>
+                  <option value="غير متأكد">غير متأكد</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message-ar">الرسالة</label>
+                <textarea id="message-ar"
+                          name="message"
+                          placeholder="المنتج، الكمية، الوزن/الأبعاد (إن وجدت)، مدينة الاستلام، مدينة الوجهة، الوقت المطلوب..."
+                          required></textarea>
+              </div>
+
+              <input type="hidden" name="language" value="AR" />
+              <input type="hidden" name="page" value="contact-ar.html" />
+              <input type="hidden" name="subject" value="طلب جديد — موقع ALTADFI (AR)" />
+
+              <button class="btn btn-wide" type="submit">إرسال</button>
+              <p class="tiny" style="margin:10px 0 0;">لرد أسرع: استخدم واتساب (الزر العائم أو الزر هنا).</p>
+            </form>
+          </div>
+
+          <!-- RIGHT: DIRECT CONTACT -->
+          <div class="card-soft">
+            <h3 style="margin-top:0;">تواصل مباشر</h3>
+            <p class="lead" style="margin:0 0 12px;">
+              واتساب هو الأسرع. ويمكنك أيضاً مراسلتنا عبر البريد.
+            </p>
+
+            <div class="trust" style="margin-top:0;">
+              <div class="trust-item">
+                <strong>واتساب</strong>
+                <span>+90 534 913 9549</span>
+              </div>
+              <div class="trust-item">
+                <strong>الإيميل</strong>
+                <span>international@altadfi.com</span>
+              </div>
+              <div class="trust-item">
+                <strong>الدول</strong>
+                <span>تركيا • ألمانيا • الجزائر • ليبيا • الصين • أمريكا • سوريا • السعودية • الإمارات</span>
+              </div>
+            </div>
+
+            <a class="btn btn-ghost btn-wide"
+               href="https://wa.me/905349139549"
+               target="_blank"
+               rel="noopener">
+              واتساب
+            </a>
+
+            <p class="tiny" style="margin:12px 0 0;">
+              نصيحة: المنتج + الكمية + بلد الوجهة = عرض أسرع.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-box">
+        <div>
+          <h2>تحتاج رد سريع؟</h2>
+          <p>أرسل التفاصيل على واتساب وسنرشدك خطوة بخطوة.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="https://wa.me/905349139549" target="_blank" rel="noopener">واتساب</a>
+          <a class="btn btn-ghost" href="services-ar.html">عرض الخدمات</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <img class="logo" src="assets/img/logos/altadfi-logo.png" alt="ALTADFI logo" />
+          <span class="brand-text">
+            <strong>ALTADFI</strong>
+            <small>حيث تكون الأعمال.</small>
+          </span>
+        </div>
+        <p class="tiny">© <span id="year"></span> Altadfi. جميع الحقوق محفوظة.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="services-ar.html">الخدمات</a>
+        <a href="about-ar.html">من نحن</a>
+        <a href="contact-ar.html">تواصل</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#" aria-label="رجوع للأعلى">↑</a>
+
+  <a class="wa-float"
+     data-wa-template="مرحباً ALTADFI 👋
+أحتاج: (استيراد/تصدير/شحن)
+المنتج:
+الكمية:
+بلد/مدينة الاستلام:
+بلد/مدينة الوجهة:
+طريقة الشحن (جوي/بحري/سريع):
+تفاصيل إضافية:"
+     target="_blank" rel="noopener">واتساب</a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
