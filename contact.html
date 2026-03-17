@@ -4,11 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Altadfi</title>
-  <meta name="description" content="Contact Altadfi for import/export, shipping and logistics, and high-value goods coordination." />
+  <meta
+    name="description"
+    content="Contact Altadfi for import/export, shipping and logistics, and high-value goods coordination."
+  />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -51,7 +57,7 @@
         <div class="card">
           <p class="pill">Contact</p>
           <h1>Get a quote</h1>
-          <p class="lead">Send your request details and we’ll reply with next steps (usually same day).</p>
+          <p class="lead">Send your request details and we’ll reply with next steps, usually the same day.</p>
         </div>
       </div>
     </section>
@@ -61,21 +67,19 @@
         <div class="grid2">
           <!-- FORM -->
           <div class="card-soft">
-            <h3 style="margin-top:0;">Request form</h3>
+            <h3 style="margin-top: 0;">Request form</h3>
 
-            <!-- ✅ Netlify Forms -->
-            <form class="form"
-                  name="altadfi-leads"
-                  method="POST"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
-                  action="/thanks.html">
-
-              <!-- Required hidden input for Netlify -->
+            <form
+              class="form"
+              name="altadfi-leads"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              action="/thanks.html"
+            >
               <input type="hidden" name="form-name" value="altadfi-leads" />
 
-              <!-- Honeypot -->
-              <p style="display:none;">
+              <p style="display: none;">
                 <label>Don’t fill this out: <input name="bot-field" /></label>
               </p>
 
@@ -108,12 +112,23 @@
 
               <div class="field">
                 <label for="pickup">Pickup country/city (optional)</label>
-                <input id="pickup" name="pickup_country_city" type="text" placeholder="e.g., Turkey — Istanbul" />
+                <input
+                  id="pickup"
+                  name="pickup_country_city"
+                  type="text"
+                  placeholder="e.g., Turkey — Istanbul"
+                />
               </div>
 
               <div class="field">
                 <label for="destination">Destination country/city</label>
-                <input id="destination" name="destination_country_city" type="text" placeholder="e.g., Saudi Arabia — Riyadh" required />
+                <input
+                  id="destination"
+                  name="destination_country_city"
+                  type="text"
+                  placeholder="e.g., Saudi Arabia — Riyadh"
+                  required
+                />
               </div>
 
               <div class="field">
@@ -128,35 +143,45 @@
 
               <div class="field">
                 <label for="message">Message</label>
-                <textarea id="message" name="message"
-                          placeholder="Product, quantity, weight/dimensions (if available), pickup city, destination city, preferred timeline..."
-                          required></textarea>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Product, quantity, weight/dimensions if available, pickup city, destination city, preferred timeline..."
+                  required
+                ></textarea>
               </div>
 
-              <!-- Useful metadata -->
               <input type="hidden" name="language" value="EN" />
               <input type="hidden" name="page" value="contact.html" />
               <input type="hidden" name="subject" value="New Lead — ALTADFI Website (EN)" />
 
               <button class="btn btn-wide" type="submit">Send</button>
-              <p class="tiny" style="margin:10px 0 0;">Prefer WhatsApp? Use the floating button.</p>
+              <p class="tiny" style="margin: 10px 0 0;">Prefer WhatsApp? Use the button below or the floating button.</p>
             </form>
           </div>
 
           <!-- DIRECT CONTACT -->
           <div class="card-soft">
-            <h3 style="margin-top:0;">Direct contact</h3>
-            <p class="lead" style="margin:0 0 12px;">WhatsApp is fastest. You can also email us directly.</p>
+            <h3 style="margin-top: 0;">Direct contact</h3>
+            <p class="lead" style="margin: 0 0 12px;">WhatsApp is fastest. You can also email us directly.</p>
 
-            <div class="trust" style="margin-top:0;">
+            <div class="trust" style="margin-top: 0;">
               <div class="trust-item">
                 <strong>WhatsApp</strong>
-                <span>+90 534 913 9549</span>
+                <span>
+                  <a href="https://wa.me/905349139549" target="_blank" rel="noopener">
+                    +90 534 913 9549
+                  </a>
+                </span>
               </div>
+
               <div class="trust-item">
                 <strong>Email</strong>
-                <span>international@altadfi.com</span>
+                <span>
+                  <a href="mailto:international@altadfi.com">international@altadfi.com</a>
+                </span>
               </div>
+
               <div class="trust-item">
                 <strong>Regions</strong>
                 <span>Turkey • Germany • Algeria • Libya • China • USA • Syria • Saudi Arabia • UAE</span>
@@ -167,7 +192,7 @@
               WhatsApp
             </a>
 
-            <p class="tiny" style="margin:12px 0 0;">Tip: product + quantity + destination = faster quote.</p>
+            <p class="tiny" style="margin: 12px 0 0;">Tip: product + quantity + destination = faster quote.</p>
           </div>
         </div>
       </div>
@@ -179,9 +204,10 @@
           <h2>Need a quick response?</h2>
           <p>Send your details on WhatsApp and we’ll guide you.</p>
         </div>
+
         <div class="cta-actions">
           <a class="btn" href="https://wa.me/905349139549" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn btn-ghost" href="services.html">View Services</a>
+          <a class="btn btn-ghost" href="mailto:international@altadfi.com">Email us</a>
         </div>
       </div>
     </section>
@@ -210,16 +236,14 @@
 
   <a class="to-top" href="#" aria-label="Back to top">↑</a>
 
-  <a class="wa-float"
-     data-wa-template="Hello ALTADFI 👋
-I need: (Import/Export/Shipping)
-Product:
-Quantity:
-Pickup country/city:
-Destination country/city:
-Shipping method (Air/Sea/Express):
-More details:"
-     target="_blank" rel="noopener">WhatsApp</a>
+  <a
+    class="wa-float"
+    href="https://wa.me/905349139549?text=Hello%20ALTADFI%20%F0%9F%91%8B%0AI%20need%3A%20(Import%2FExport%2FShipping)%0AProduct%3A%0AQuantity%3A%0APickup%20country%2Fcity%3A%0ADestination%20country%2Fcity%3A%0AShipping%20method%20(Air%2FSea%2FExpress)%3A%0AMore%20details%3A"
+    target="_blank"
+    rel="noopener"
+  >
+    WhatsApp
+  </a>
 
   <script src="assets/js/main.js"></script>
 </body>
